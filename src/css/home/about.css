@@ -1,0 +1,37 @@
+.about {
+    max-width: 1000px;
+    margin: 0 auto 140px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content p {
+    line-height: 1.40;
+    letter-spacing: 0.5px;
+    color: var(--color-text-p);
+    margin-bottom: 10px;
+}
+
+.content p span {
+    font-weight: 600;
+    color: var(--color-text2);
+}
+
+@media (max-width: 950px) {
+    .about {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .about img {
+        margin: 0 auto 40px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .about img {
+        display: none;
+    }
+}

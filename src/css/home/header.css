@@ -1,5 +1,7 @@
+@import '../global/variables.css';
+
 .header-bg {
-    background-color: #fff;
+    /* background-color: var(--color-bg); */
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     width: 100%;
     position: fixed;
@@ -19,6 +21,7 @@
 .logo {
     font-size: 1.3rem;
     font-weight: 600;
+    color: var(--color-primary);
 }
 
 .header-menu {
@@ -38,7 +41,7 @@
     display: block;
     width: 0px;
     height: 2px;
-    background-color: #9400d3;
+    background-color: var(--color-bg-primary);
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -58,6 +61,79 @@
     display: none;
 }
 
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-primary);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-primary);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* DARK */
+.dark .header-bg {
+    background-color: var(--color-bg-dark);
+    color: var(--color-white);
+}  
+
+.dark .logo{
+
+}
+
 @media (max-width: 800px) {
     .header-menu {
         display: block;
@@ -69,7 +145,7 @@
         transition: .4s;
         z-index: 1000;
         height: 0px;
-        background-color: #2d2e32;
+        background-color: var(--color-bg-secundary);
         visibility: hidden;
         overflow-y: hidden;
     }
@@ -78,7 +154,7 @@
         display: block;
         padding: 10px 0px;
         margin: 0px 50px;
-        color: #ffffff;
+        color: var(--color-white);
     }
 
     .ativaMenu .header-menu{
@@ -99,7 +175,7 @@
 
     #hamburguer {
         display: block;
-        color: #2d2e32;
+        color: var(--color-secundary);
         border-top: 2px solid;
         width: 20px;
     }

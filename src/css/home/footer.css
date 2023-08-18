@@ -1,0 +1,92 @@
+.footer {
+    max-width: 1000px;
+    padding: 60px;
+}
+
+.my-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 60px 0px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-text h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-text a {
+    color: var(--color-text-p);
+    font-weight: 400;
+}
+
+.contact-text a:hover {
+    color: var(--color-primary);
+}
+
+.contact img {
+    width: 32px;
+}
+
+.footer-bg {
+    background-color: var(--color-secundary);
+    padding: 60px;
+}
+
+.footer2 {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer2 p {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 10px;
+    transition: .3s;
+}
+
+.redes-footer img {
+    width: 32px;
+    filter: invert(87%) sepia(27%) saturate(1971%) hue-rotate(237deg) brightness(85%) contrast(81%);
+    fill: var(--color-primary);
+}
+
+
+@media (max-width: 500px){
+    .footer {
+        padding: 25px;
+    }
+    .contact {
+        display: block;
+    }
+
+    .contact img{
+        margin-bottom: 15px;
+    }
+
+    .rodape-bg{
+        padding: 25px;
+    }
+    
+}
+
+@media (max-width: 350px){
+    .contact-text a{
+        font-size: 15px;
+    }
+}
