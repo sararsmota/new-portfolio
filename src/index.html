@@ -14,9 +14,10 @@
                 <button id="btn-mobile">
                     <span id="hamburguer"></span>
                 </button>
+                
                 <ul class="header-menu activeLink">
                     <li>
-                        <a href="#home">Início</a>
+                        <a href="#home" class="ativado">Início</a>
                     </li> 
                     <li>
                         <a href="#about">Sobre</a>
@@ -26,15 +27,17 @@
                     </li>
                     <li>
                         <a href="#contact">Contato</a>
-                    </li>
-                    <li>
+                    </li>  
+                                
+                    <div class="btn-dark">
                         <label class="switch">
                             <input type="checkbox" id="chk">
                             <span class="slider round"></span>
                         </label>
-                    </li>
+                    </div>  
                 </ul>
             </nav>
+
         </div>
     </header>
     <main class="introduction-bg">
@@ -67,6 +70,12 @@
                 <img src="./img/icons/react.svg" alt="icon react" title="React">
             </li>
             <li>            
+                <img src="./img/icons/nodejs.svg" alt="icon node" title="Node JS">
+            </li>
+            <li>            
+                <img src="./img/icons/delphi.svg" alt="icon delphi" title="Delphi">
+            </li>
+            <li>            
                 <img src="./img/icons/figma.svg" alt="icon figma" title="Figma">
             </li>
             <li>            
@@ -79,7 +88,7 @@
             <img src="./img/photos/me.jpeg" alt="">
             <div class="content">
                 <span class="sub-title">Sobre Mim</span>
-                <h2>Uma desenvolvedora fullstack dedicada</h2>
+                <h2 class="title">Uma desenvolvedora fullstack dedicada</h2>
                 <p>Sou uma desenvolvedora fullstack entusiasmada em início de carreira. Sou movida pela paixão por tecnologia e pela criação de experiências digitais envolventes</p>
                 <p>Minha trajetória no desenvolvimento fullstack começou há pouco tempo, mas estou dedicada a aprimorar minhas habilidades e conhecimentos. Tenho uma sólida base em
                     <span>HTML</span> , 
@@ -114,6 +123,80 @@
                         </div>
                         <div class="link-external">
                             <a href="https://sararoseanemota.github.io/calculadora-juros-composto/" target="_blank">Live Demo</a>
+                            <img src="./img/icons/link-external.svg" alt="Icone github menor">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-content">
+                <a href="#" target="_blank" class="project-img">
+                    <img src="./img/photos/monitorinstalador.png" alt="Projeto Monitor Instalador">
+                </a>
+                <div class="description">
+                    <h4>Monitor Instalador da empresa Catedral Automação</h4>
+                    <p>Aplicativo desenvolvido para consultar as instalações feitas pelos técnicos do software Catedral Automação. Esse aplicativo oferece a possibilidade de consultar por meio de filtros as instalações e desinstalações.</p>
+                    <ul class="technologies">
+                        <li>DELPHI</li>
+                        <li>HORSE API</li>
+                    </ul>
+                    <div class="links">
+                        <div class="link-external">
+                            <a href="#" target="_blank">Código</a>
+                            <img src="./img/icons/github.svg" alt="Icone github menor">
+                        </div>
+                        <div class="link-external">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <img src="./img/icons/link-external.svg" alt="Icone github menor">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-content">
+                <a href="https://sararoseanemota.github.io/dynamic-clock/" target="_blank" class="project-img">
+                    <img src="./img/photos/dynamicclock.png" alt="Projeto Relógio Dinâmico">
+                </a>
+                <div class="description">
+                    <h4>Relógio Dinâmico</h4>
+                    <p>Site com relógio dinâmico.</p>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                    <div class="links">
+                        <div class="link-external">
+                            <a href="https://github.com/sararoseanemota/dynamic-clock" target="_blank">Código</a>
+                            <img src="./img/icons/github.svg" alt="Icone github menor">
+                        </div>
+                        <div class="link-external">
+                            <a href="https://sararoseanemota.github.io/dynamic-clock/" target="_blank">Live Demo</a>
+                            <img src="./img/icons/link-external.svg" alt="Icone github menor">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-content">
+                <a href="v" target="_blank" class="project-img">
+                    <img src="./img/photos/apifilmes.png" alt="Projeto Rocketseate Recomendação de Filmes IA">
+                </a>
+                <div class="description">
+                    <h4>Recomendação de Filmes IA</h4>
+                    <p>Desafio da Rocketseat #boraCodar30. Site para recomendar filmes com IA.</p>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                    <div class="links">
+                        <div class="link-external">
+                            <a href="https://github.com/sararoseanemota/bora-codar-30" target="_blank">Código</a>
+                            <img src="./img/icons/github.svg" alt="Icone github menor">
+                        </div>
+                        <div class="link-external">
+                            <a href="https://sararoseanemota.github.io/bora-codar-30/" target="_blank">Live Demo</a>
                             <img src="./img/icons/link-external.svg" alt="Icone github menor">
                         </div>
                     </div>
@@ -156,6 +239,6 @@
         </div>
     </footer>
     
-    <script src="./js/script.js"></script>
+    <script  type="module" src="./js/script.js"></script>
 </body>
 </html>
