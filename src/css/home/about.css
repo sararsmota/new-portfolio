@@ -19,6 +19,7 @@
     color: var(--color-text2);
 }
 
+
 @media (max-width: 950px) {
     .about {
         grid-template-columns: 1fr;

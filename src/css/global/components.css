@@ -1,3 +1,25 @@
+
+/* DARK MODE */
+body.dark{
+    background-color: var(--color-bg-dark2);
+    color: var(--color-white);
+}
+
+body.dark .introduction-bg{
+    background-color: var(--color-bg-dark2);
+    color: var(--color-white);
+}
+
+body.dark .introduction-bg p{
+    background-color: var(--color-bg-dark2);
+    color: var(--color-white);
+}
+
+body.dark .introduction-bg img{
+    filter: invert(100%) sepia(3%) saturate(223%) hue-rotate(265deg) brightness(118%) contrast(100%);;
+
+}
+
 .container {
     max-width: 1200px;
     padding: 0px 20px;

@@ -35,6 +35,13 @@
 }
 
 /* DARK */
+/* .dark .skills{
+    background-color: var(--color-bg-dark2);
+    color: var(--color-white);
+    margin: 50px auto 150px auto;
+
+}
+
 .dark .container.skills article  {
     background-color: var(--color-bg-dark2);
     color: var(--color-white);
@@ -47,6 +54,7 @@
 .dark .introduction p {
     color: var(--color-white);
 }
+
 .dark .tech-icons img {
     filter: invert(100%) sepia(3%) saturate(223%) hue-rotate(265deg) brightness(118%) contrast(100%);;
-}
+} */
