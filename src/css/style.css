@@ -1,6 +1,7 @@
 /* Global */
 @import './global/reset.css';
 @import './global/components.css';
+@import './global/dark.css';
 @import './global/variables.css';
 
 /* HOME */
