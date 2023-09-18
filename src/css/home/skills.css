@@ -30,6 +30,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.tech-icons li:hover{
+    opacity: 0.6;
+    transition: all 0.4s ease;
+}
+
 .tech-icons img {
     width: 32px;
 }
